@@ -58,7 +58,7 @@ class CountriesMedium extends React.Component {
             case 4:
                 question = {
                     name: "Węgry",
-                    correct: "匈牙利	"
+                    correct: "匈牙利"
                 }
                 break;
 
@@ -76,7 +76,7 @@ class CountriesMedium extends React.Component {
                 break;
 
             default:
-                return <p style={{textAlign: 'center', fontSize: '26px'}}>Twój wynik to {this.state.score}/7 poprawnych odpowiedzi</p>
+                return <p style={{ textAlign: 'center', fontSize: '26px' }}>Twój wynik to {this.state.score}/7 poprawnych odpowiedzi</p>
         }
 
         return <GameMechanic {...this.props} {...question} answers={answers} nextQuestion={this.nextQuestion} getPoint={this.getPoint} />

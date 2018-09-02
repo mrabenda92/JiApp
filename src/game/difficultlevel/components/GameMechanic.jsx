@@ -19,8 +19,6 @@ class Card extends React.PureComponent {
         if (this.props.answer == this.props.correct) {
             this.setState({
                 cardClass: 'cardCorrect',
-            }, () => {
-                this.props.getPoint()
             })
         } else {
             this.setState({
@@ -131,5 +129,3 @@ class GameMechanic extends React.Component {
 
 export default GameMechanic;
 
-
-//disabled   disabled={!this.input.value}
