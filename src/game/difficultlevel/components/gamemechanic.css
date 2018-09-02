@@ -1,0 +1,126 @@
+.cardBox {
+    font-size: 55px;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 35px;
+    float: left;
+    position: relative;
+    border-radius: 6px;
+    padding-top: 100px;
+    cursor: pointer;
+    background-image: 
+    repeating-linear-gradient(
+      -45deg,
+      #74a3e0,
+      #53a8ee 5px,
+      #4fb7f3 5px,
+      #399ee2 10px)
+}
+
+
+input[type="button" i]:disabled, input[type="submit" i]:disabled, input[type="reset" i]:disabled, input[type="file" i]:disabled::-webkit-file-upload-button, button:disabled, select:disabled, optgroup:disabled, option:disabled, select[disabled] > option {
+  color: black;
+}
+
+.cardBox:hover {
+  opacity: 0.85
+}
+
+.cardBox:disabled:hover {
+  opacity: 1
+}
+
+.cardCorrect {
+  background-image: 
+  repeating-linear-gradient(
+    -45deg,
+    #1ac4a2,
+    #14d4ab 5px,
+    #5ad876 5px,
+    #0eff42 10px)
+}
+
+.cardIncorrect {
+  background-image: 
+  repeating-linear-gradient(
+    -45deg,
+    #d32f2f,
+    #50161e 5px,
+    #d65757 5px,
+    #f14848 10px)
+}
+
+.btnNext {
+  opacity: 0.9;
+  color: rgba(0, 17, 5, 0.514);
+  font-size: 26px;
+  text-align: center;
+  width: 150px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 35px;
+  float: left;
+  position: relative;
+  border-radius: 6px;
+  padding-top: 100px;
+  cursor: pointer;
+  background-image: 
+  repeating-linear-gradient(
+    -45deg,
+    #bad32f,
+    #6ace18 5px,
+    #75d657 5px,
+    #94be20 10px)
+}
+
+.btnNext:hover {
+  opacity: 0.85
+}
+
+.btnNext:disabled {
+  opacity: 0.6
+}
+
+.btnNext:disabled:hover {
+  opacity: 1
+}
+
+@media only screen and (max-width: 1400px) {
+ * {
+   margin-left: 0;
+ }
+
+ .cardBox {
+    left: -250px;
+    display: block;
+    font-size: 25px;
+    width: 180px;
+    height: 240px;
+}
+
+.btnNext {
+    left: -250px;
+    font-size: 25px;
+    width: 180px;
+    height: 240px;
+  
+}}
+
+@media only screen and (max-width: 1200px) {
+  .cardBox {
+    left: -250px;
+    display: block;
+    font-size: 25px;
+    width: 100px;
+    height: 150px;
+}
+
+.btnNext {
+  left: -250px;
+  font-size: 25px;
+  width: 100px;
+  height: 150px;
+}
+}
