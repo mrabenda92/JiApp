@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mrabenda92.github.io/JiApp/",
   "dependencies": {
     "bulma": "^0.7.1",
     "firebase": "^5.4.0",
@@ -20,5 +21,4 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://mrabenda92.github.io/JiApp/"
 }
