@@ -19,7 +19,8 @@ class Card extends React.PureComponent {
         if (this.props.answer == this.props.correct) {
             this.setState({
                 cardClass: 'cardCorrect',
-            })
+            }, () => {
+                this.props.getPoint()})
         } else {
             this.setState({
                 cardClass: 'cardIncorrect'
@@ -43,15 +44,15 @@ class Card extends React.PureComponent {
 class GameMechanic extends React.Component {
     state = {
         answers: [],
-        isCardSelected: false
+        isCardSelected: false,
+        
     }
 
     componentDidMount = () => {
         const answers = this.randomizeQuestion(this.props)
         this.setState({
             answers
-        })
-    }
+        })}
 
     componentWillReceiveProps = (nextProps) => {
         const answers = this.randomizeQuestion(nextProps)
@@ -102,6 +103,7 @@ class GameMechanic extends React.Component {
     render() {
         return (
             <div style={styles} >
+                {/* <div style={{display: 'block',float: 'left'}}>Wynik: {this.state.score}/7</div> */}
                 <h1 style={{ marginRight: '550px' }}>
                     Wybierz znaki dla słowa {this.props.name}
                 </h1>

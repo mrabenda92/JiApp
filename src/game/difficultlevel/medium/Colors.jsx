@@ -9,6 +9,12 @@ class ColorsMedium extends React.Component {
                 score: 0
             }
     }
+    
+    shouldComponentUpdate = (nextProps, nextState) => {
+        if(this.state.score == nextState.score) {
+            return true
+        }
+    }
 
     nextQuestion = () => {
         this.setState ({

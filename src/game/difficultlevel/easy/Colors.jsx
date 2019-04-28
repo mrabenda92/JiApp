@@ -10,6 +10,12 @@ class Colors extends React.Component {
             }
     }
 
+    shouldComponentUpdate = (nextProps, nextState) => {
+        if(this.state.score == nextState.score) {
+            return true
+        }
+    }
+
     nextQuestion = () => {
         this.setState ({
             qNumber: this.state.qNumber + 1

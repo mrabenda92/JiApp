@@ -14,7 +14,7 @@ class Main extends React.Component {
         > 
           Start
         </button>
-        <p className="mt-5 mb-3 text-muted">米洛玆 for CodersLab&copy; 2018</p>
+        <p className="mt-5 mb-3 text-muted">米洛玆&copy; Miłosz Rabenda</p>
       </div>
     );
   }
