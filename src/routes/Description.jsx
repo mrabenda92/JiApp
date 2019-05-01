@@ -6,11 +6,11 @@ class Description extends React.Component {
 
     render() {
         return (
-            <div className="form-signin">
+            <div>
                 <h1 className="descrp" style={{ textAlign: 'center', marginBottom: '20px' }}>
                     Proste zwroty chińskie:
                 </h1>
-                <ul>
+                <ul className="form-signin">
                     <li>你好 [Nǐ hǎo] - Dzień dobry (nieformalnie do jednej osoby)</li>
                     <li>您好 [Nín hǎo] - Dzień dobry (formalnie do jednej osoby)</li>
                     <li>你们好 [Nǐmen hǎo] - Dzień dobry (nieformalnie do 2 lub więcej osób)</li>

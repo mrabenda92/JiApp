@@ -3,7 +3,7 @@ import ReturnButton from "../components/ReturnButton";
 import './gamemechanic.css';
 
 const styles = {
-    width: '100%',
+    // width: '100%',
     height: '600px',
     textAlign: 'center',
     marginTop: '20px',
@@ -102,28 +102,28 @@ class GameMechanic extends React.Component {
 
     render() {
         return (
-            <div style={styles} >
-                {/* <div style={{display: 'block',float: 'left'}}>Wynik: {this.state.score}/7</div> */}
-                <h1 style={{ marginRight: '550px' }}>
+            <div>
+                <h1 style={{ textAlign: "center" }}>
                     Wybierz znaki dla słowa {this.props.name}
                 </h1>
-                <div style={{ margin: '0 auto', width: '100%' }}>
-                    {this.state.answers.map(answer => {
-                        return <Card
-                            getPoint={this.props.getPoint}
-                            correct={this.props.correct}
-                            answer={answer}
-                            chooseAnswer={this.chooseAnswer}
-                            disabled={this.state.isCardSelected}
-                        />
-                    })}
-                </div> <button
-                    class='btn btn-primary btnNext'
-                    onClick={this.nextQuestion}
-                    disabled={!this.state.isCardSelected}
-                >Dalej</button>
-                <ReturnButton btn='btn btn-primary' />
-
+                <div style={styles} >
+                    <div style={{ margin: '0 auto', width: '100%' }}>
+                        {this.state.answers.map(answer => {
+                            return <Card
+                                getPoint={this.props.getPoint}
+                                correct={this.props.correct}
+                                answer={answer}
+                                chooseAnswer={this.chooseAnswer}
+                                disabled={this.state.isCardSelected}
+                            />
+                        })}
+                    </div> <button
+                        class='btn btn-primary btnNext'
+                        onClick={this.nextQuestion}
+                        disabled={!this.state.isCardSelected}
+                    >Dalej</button>
+                    <ReturnButton btn='btn btn-primary' />
+                </div>
             </div>
         );
     }
