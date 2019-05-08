@@ -6,7 +6,6 @@
   "dependencies": {
     "bulma": "^0.7.4",
     "firebase": "^5.11.1",
-    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^4.3.1",
@@ -20,5 +19,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

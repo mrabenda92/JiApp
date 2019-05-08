@@ -8,7 +8,7 @@ class ReturnButton extends Component {
                 <button
                     type="button"
                     class={this.props.btn}
-                    style={{ marginTop: '55px', marginLeft: '35px', width: '100px'}}
+                    style={{ marginTop: '55px', width: '100px'}}
                     onClick={this.props.history.goBack}>
                     Wróć
                 </button>

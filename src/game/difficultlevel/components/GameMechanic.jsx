@@ -2,13 +2,6 @@ import React from "react";
 import ReturnButton from "../components/ReturnButton";
 import './gamemechanic.css';
 
-const styles = {
-    // width: '100%',
-    height: '600px',
-    textAlign: 'center',
-    marginTop: '20px',
-    marginLeft: '250px'
-}
 
 class Card extends React.PureComponent {
     state = {
@@ -103,11 +96,11 @@ class GameMechanic extends React.Component {
     render() {
         return (
             <div>
-                <h1 style={{ textAlign: "center" }}>
+                <h1>
                     Wybierz znaki dla słowa {this.props.name}
                 </h1>
-                <div style={styles} >
-                    <div style={{ margin: '0 auto', width: '100%' }}>
+                <div className="styles">
+                    <div>
                         {this.state.answers.map(answer => {
                             return <Card
                                 getPoint={this.props.getPoint}

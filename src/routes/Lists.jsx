@@ -5,10 +5,10 @@ class Description extends React.Component {
     render() {
         return (
                 <div>
-                    <h1>
+                    <h1 className="titleMargin">
                         Lista znaków:
                     </h1>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center'}}>
+                    <div className="countryList">
                         <ul>
                             <h2>Kraje: </h2>
                             <li>英国 Anglia</li>
@@ -20,7 +20,7 @@ class Description extends React.Component {
                             <li>中国 Chiny</li>
                             <li>泰国 Tajlandia</li>
                             <li>法国 Francja</li>
-                            {/* <li>美国 USA</li> */}
+                            <li>美国 USA</li>
                         </ul>
 
                         <ul>
@@ -47,10 +47,10 @@ class Description extends React.Component {
                             <li>紫色 zǐsè - fioletowy</li>
                             <li>灰色 huīsè - szary</li>
                             <li>棕色 zōngsè - brązowy</li>
-                            {/* <li>橄榄色 gǎnlǎnsè - oliwkowy</li>
+                            <li>橄榄色 gǎnlǎnsè - oliwkowy</li>
                             <li>金色 jīn​ sè - złoty</li>
                             <li>银色 yín​ sè - srebrny</li>
-                            <li>橙色 chéngsè - pomarańczowy</li> */}
+                            <li>橙色 chéngsè - pomarańczowy</li>
                         </ul>
                     </div>
             </div>

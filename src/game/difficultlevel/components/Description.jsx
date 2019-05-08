@@ -4,8 +4,8 @@ class Description extends Component {
     render() {
         return (
             <div>
-                <div className="form-signin" style={{ marginLeft: '150px', float: 'left' }}>
-                    <h1 style={{ paddingLeft: '45px', color: this.props.levelColor }}>
+                <div className="form-signin">
+                    <h1 style={{ paddingLeft: '45px', color: this.props.levelColor, marginBottom: "10px"}}>
                         {this.props.name}
         </h1>
                     <p style={{ textAlign: 'center' }}>{this.props.descrp}</p>
